@@ -1,0 +1,3 @@
+/home/hollow/Vs-Cpp/this-01/CMakeFiles/Demo.dir
+/home/hollow/Vs-Cpp/this-01/CMakeFiles/edit_cache.dir
+/home/hollow/Vs-Cpp/this-01/CMakeFiles/rebuild_cache.dir
