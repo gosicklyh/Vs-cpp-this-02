@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hollow/Vs-Cpp/this-01
+CMAKE_SOURCE_DIR = /home/hollow/Vs-Cpp/this-02
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hollow/Vs-Cpp/this-01
+CMAKE_BINARY_DIR = /home/hollow/Vs-Cpp/this-02
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Demo.dir/depend.make
@@ -69,31 +69,47 @@ include CMakeFiles/Demo.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/Demo.dir/flags.make
 
-CMakeFiles/Demo.dir/main.cpp.o: CMakeFiles/Demo.dir/flags.make
-CMakeFiles/Demo.dir/main.cpp.o: main.cpp
-CMakeFiles/Demo.dir/main.cpp.o: CMakeFiles/Demo.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollow/Vs-Cpp/this-01/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Demo.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Demo.dir/main.cpp.o -MF CMakeFiles/Demo.dir/main.cpp.o.d -o CMakeFiles/Demo.dir/main.cpp.o -c /home/hollow/Vs-Cpp/this-01/main.cpp
+CMakeFiles/Demo.dir/client.cpp.o: CMakeFiles/Demo.dir/flags.make
+CMakeFiles/Demo.dir/client.cpp.o: client.cpp
+CMakeFiles/Demo.dir/client.cpp.o: CMakeFiles/Demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollow/Vs-Cpp/this-02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Demo.dir/client.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Demo.dir/client.cpp.o -MF CMakeFiles/Demo.dir/client.cpp.o.d -o CMakeFiles/Demo.dir/client.cpp.o -c /home/hollow/Vs-Cpp/this-02/client.cpp
 
-CMakeFiles/Demo.dir/main.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Demo.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hollow/Vs-Cpp/this-01/main.cpp > CMakeFiles/Demo.dir/main.cpp.i
+CMakeFiles/Demo.dir/client.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Demo.dir/client.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hollow/Vs-Cpp/this-02/client.cpp > CMakeFiles/Demo.dir/client.cpp.i
 
-CMakeFiles/Demo.dir/main.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Demo.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hollow/Vs-Cpp/this-01/main.cpp -o CMakeFiles/Demo.dir/main.cpp.s
+CMakeFiles/Demo.dir/client.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Demo.dir/client.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hollow/Vs-Cpp/this-02/client.cpp -o CMakeFiles/Demo.dir/client.cpp.s
+
+CMakeFiles/Demo.dir/server.cpp.o: CMakeFiles/Demo.dir/flags.make
+CMakeFiles/Demo.dir/server.cpp.o: server.cpp
+CMakeFiles/Demo.dir/server.cpp.o: CMakeFiles/Demo.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/hollow/Vs-Cpp/this-02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Demo.dir/server.cpp.o"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Demo.dir/server.cpp.o -MF CMakeFiles/Demo.dir/server.cpp.o.d -o CMakeFiles/Demo.dir/server.cpp.o -c /home/hollow/Vs-Cpp/this-02/server.cpp
+
+CMakeFiles/Demo.dir/server.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Demo.dir/server.cpp.i"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/hollow/Vs-Cpp/this-02/server.cpp > CMakeFiles/Demo.dir/server.cpp.i
+
+CMakeFiles/Demo.dir/server.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Demo.dir/server.cpp.s"
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/hollow/Vs-Cpp/this-02/server.cpp -o CMakeFiles/Demo.dir/server.cpp.s
 
 # Object files for target Demo
 Demo_OBJECTS = \
-"CMakeFiles/Demo.dir/main.cpp.o"
+"CMakeFiles/Demo.dir/client.cpp.o" \
+"CMakeFiles/Demo.dir/server.cpp.o"
 
 # External object files for target Demo
 Demo_EXTERNAL_OBJECTS =
 
-Demo: CMakeFiles/Demo.dir/main.cpp.o
+Demo: CMakeFiles/Demo.dir/client.cpp.o
+Demo: CMakeFiles/Demo.dir/server.cpp.o
 Demo: CMakeFiles/Demo.dir/build.make
 Demo: CMakeFiles/Demo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hollow/Vs-Cpp/this-01/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable Demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/hollow/Vs-Cpp/this-02/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Demo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Demo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -105,6 +121,6 @@ CMakeFiles/Demo.dir/clean:
 .PHONY : CMakeFiles/Demo.dir/clean
 
 CMakeFiles/Demo.dir/depend:
-	cd /home/hollow/Vs-Cpp/this-01 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hollow/Vs-Cpp/this-01 /home/hollow/Vs-Cpp/this-01 /home/hollow/Vs-Cpp/this-01 /home/hollow/Vs-Cpp/this-01 /home/hollow/Vs-Cpp/this-01/CMakeFiles/Demo.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/hollow/Vs-Cpp/this-02 && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/hollow/Vs-Cpp/this-02 /home/hollow/Vs-Cpp/this-02 /home/hollow/Vs-Cpp/this-02 /home/hollow/Vs-Cpp/this-02 /home/hollow/Vs-Cpp/this-02/CMakeFiles/Demo.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/Demo.dir/depend
 

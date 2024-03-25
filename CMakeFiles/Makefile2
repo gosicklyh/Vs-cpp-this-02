@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/hollow/Vs-Cpp/this-01
+CMAKE_SOURCE_DIR = /home/hollow/Vs-Cpp/this-02
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/hollow/Vs-Cpp/this-01
+CMAKE_BINARY_DIR = /home/hollow/Vs-Cpp/this-02
 
 #=============================================================================
 # Directory level rules for the build root directory
@@ -81,14 +81,14 @@ clean: CMakeFiles/Demo.dir/clean
 CMakeFiles/Demo.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Demo.dir/build.make CMakeFiles/Demo.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollow/Vs-Cpp/this-01/CMakeFiles --progress-num=1,2 "Built target Demo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/hollow/Vs-Cpp/this-02/CMakeFiles --progress-num=1,2,3 "Built target Demo"
 .PHONY : CMakeFiles/Demo.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/Demo.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollow/Vs-Cpp/this-01/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollow/Vs-Cpp/this-02/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Demo.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollow/Vs-Cpp/this-01/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/hollow/Vs-Cpp/this-02/CMakeFiles 0
 .PHONY : CMakeFiles/Demo.dir/rule
 
 # Convenience name for target.

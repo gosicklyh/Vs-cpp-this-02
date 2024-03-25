@@ -8,7 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/home/hollow/Vs-Cpp/this-01/main.cpp" "CMakeFiles/Demo.dir/main.cpp.o" "gcc" "CMakeFiles/Demo.dir/main.cpp.o.d"
+  "/home/hollow/Vs-Cpp/this-02/client.cpp" "CMakeFiles/Demo.dir/client.cpp.o" "gcc" "CMakeFiles/Demo.dir/client.cpp.o.d"
+  "/home/hollow/Vs-Cpp/this-02/server.cpp" "CMakeFiles/Demo.dir/server.cpp.o" "gcc" "CMakeFiles/Demo.dir/server.cpp.o.d"
   )
 
 # Targets to which this target links.
